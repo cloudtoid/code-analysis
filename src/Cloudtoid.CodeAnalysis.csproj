@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <!-- NuGet Packaging -->
+  <PropertyGroup>
+    <PackageId>Cloudtoid.CodeAnalysis</PackageId>
+    <Title>Cloudtoid.CodeAnalysis</Title>
+    <Authors>pedram@rezaei.us</Authors>
+    <Company>cloudtoid</Company>
+    <PackageDescription>This is a common set of code analysis settings used by cloudtoid and other projects</PackageDescription>
+    <Copyright>Copyright (c) Cloudtoid</Copyright>
+    <RepositoryUrl>https://github.com/cloudtoid/code-analysis/</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/cloudtoid/code-analysis/blob/master/README.md</PackageProjectUrl>
+    <IsPackable>true</IsPackable>
+    <PackageTags>code-analysis</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <VersionSuffix Condition=" '$(VersionSuffix)'=='' ">0</VersionSuffix>
+    <Version>1.0.$(VersionSuffix)</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="assets\Cloudtoid.CodeAnalysis.targets" PackagePath="build" />
+    <Content Include="assets\Cloudtoid.CodeAnalysis.props" PackagePath="build" />
+    <Content Include="assets\stylecop.ruleset" PackagePath="build" />
+    <Content Include="assets\stylecop.json" PackagePath="build" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+<Project>
+
+    <!-- Warnings and Errors -->
+  <PropertyGroup>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StopOnFirstFailure>true</StopOnFirstFailure>
+  </PropertyGroup>
+
+  <!-- Code Analyzer Assets -->
+  <ItemGroup>
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" Visible="false" Link="Properties\stylecop.json" />
+  </ItemGroup>
+  
+</Project>
