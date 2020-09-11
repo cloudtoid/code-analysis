@@ -19,6 +19,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <VersionSuffix Condition=" '$(VersionSuffix)'=='' ">0</VersionSuffix>
     <Version>1.0.$(VersionSuffix)</Version>
+    <DevelopmentDependency>true</DevelopmentDependency>
   </PropertyGroup>
 
   <ItemGroup>
