@@ -2,7 +2,7 @@
 
 # Code Analysis
 
-![][WorkflowBadgePublish] [![License: MIT][LicenseBadge]][License]
+[![][WorkflowBadgePublish]][PublishWorkflow] [![License: MIT][LicenseBadge]][License]
 
 This is a collection of code analysis rules that we found most *sensible* to use in our projects, in a form of a NuGet package.
 
@@ -14,4 +14,5 @@ The NuGet package for this library is published [here][NuGet].
 [License]:https://github.com/cloudtoid/code-analysis/blob/master/LICENSE
 [LicenseBadge]:https://img.shields.io/badge/License-MIT-blue.svg
 [WorkflowBadgePublish]:https://github.com/cloudtoid/code-analysis/workflows/publish/badge.svg
+[PublishWorkflow]:https://github.com/cloudtoid/code-analysis/actions/workflows/publish.yml
 [NuGet]:https://www.nuget.org/packages/Cloudtoid.CodeAnalysis/
