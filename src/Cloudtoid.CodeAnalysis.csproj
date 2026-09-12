@@ -6,6 +6,7 @@
 
   <!-- NuGet Packaging -->
   <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageId>Cloudtoid.CodeAnalysis</PackageId>
     <Title>Cloudtoid.CodeAnalysis</Title>
     <Authors>pedram@rezaei.us</Authors>
@@ -33,6 +34,10 @@
     <Content Include="assets\Cloudtoid.CodeAnalysis.props" PackagePath="build" />
     <Content Include="assets\stylecop.ruleset" PackagePath="build" />
     <Content Include="assets\stylecop.json" PackagePath="build" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="/" />
   </ItemGroup>
 
 </Project>
